@@ -1,6 +1,6 @@
 import Img from "gatsby-image"
-import styled from 'styled-components';
-import variables from '../../data/variables';
+import styled from "styled-components"
+import variables from "../../data/variables"
 
 export const AboutSection = styled.section`
   text-align: center;
@@ -11,7 +11,7 @@ export const AboutSection = styled.section`
     text-align: left;
   }
 `
-export const Avatar =styled(Img)`
+export const Avatar = styled(Img)`
   border-radius: 5px;
   box-shadow: 0px 0px 64px rgba(0, 0, 0, 0.15);
   width: 100%;
@@ -19,8 +19,9 @@ export const Avatar =styled(Img)`
 export const Title = styled.h1`
   font-size: 3rem;
   text-transform: capitalize;
-  font-family: "GT-Walsheim-Pro-Bold";
-  @media(max-width: ${variables.breakpointPhone}) {
+  font-family: ${variables.fontFamily};
+  font-weight: bold;
+  @media (max-width: ${variables.breakpointPhone}) {
     font-size: 2rem;
   }
 `
@@ -29,23 +30,24 @@ export const Text = styled.p`
   line-height: 2;
   color: #232323;
   a {
-    color: #3F51B5;
+    color: #3f51b5;
     text-decoration: underline;
   }
 `
 export const SubTitle = styled.h2`
-  font-family: "GT-Walsheim-Pro-Medium";
+  font-family: ${variables.fontFamily};
+  font-weight: bold;
   margin-top: 3rem;
   margin-bottom: 2rem;
   text-align: center;
   text-transform: uppercase;
   word-spacing: 8px;
-  @media(min-width: ${variables.breakpointPhone}) {
+  @media (min-width: ${variables.breakpointPhone}) {
     font-size: 1.8em;
   }
 `
 export const SocialLink = styled.a`
-	border-radius: 5px;
+  border-radius: 5px;
   margin: 5px;
   display: inline-block;
   padding: 5px 10px;
