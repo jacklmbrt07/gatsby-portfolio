@@ -12,7 +12,7 @@ const Navbar = ({ siteTitle }) => (
         <NavbarLogo>
           <h3>
             <Link to="/">
-              <Coffee className="align-middle" />{" "}&nbsp;
+              <Coffee className="align-middle" /> &nbsp;
               <span className="align-middle"> {siteTitle} </span>
             </Link>
           </h3>
@@ -22,7 +22,7 @@ const Navbar = ({ siteTitle }) => (
             <li>
               <Link to="/" className="lined-link" activeClassName="active">
                 {" "}
-                <User /> <span> About </span>{" "}
+                <User/><span> About</span>{" "}
               </Link>
             </li>
             <li>

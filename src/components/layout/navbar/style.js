@@ -42,7 +42,7 @@ export const NavbarList = styled.ul`
     }
     span,
     svg {
-      display: block;
+      display: inline-block;
       vertical-align: middle;
     }
     @media (max-width: ${variables.breakpointPhone}) {

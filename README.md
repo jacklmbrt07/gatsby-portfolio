@@ -2,7 +2,7 @@ Portfolio To-Do:
 
 - ~~change font~~
 - ~~add space between coffee~~
-- move icons next navbar links
+- ~~move icons next navbar links~~
 - remove twitter link after Avatar
 - change about me
 - change button format for 'download resume' too big
