@@ -32,7 +32,6 @@ export const SubRight = styled.p`
 	font-size: 1rem;
 	line-height: 1.8;
 	letter-spacing:2px;
-	text-transform: capitalize;
 	margin-bottom: 20px;
 	font-family: ${variables.fontFamily};
 	font-weight: bold;
@@ -50,27 +49,4 @@ export const FooterBody = styled.div`
 	@media(max-width: ${variables.breakpointPhone}) {
 		grid-template-columns: 1fr;
 	}
-`
-export const FooterSocialMedia = styled.ul`
-	list-style: none;
-	padding-left: 0;
-	@media(max-width: ${variables.breakpointPhone}) {
-		display: flex;
-		align-items: center;
-		justify-content: space-between;
-	}
-	li {
-		margin-bottom: 1.5rem;
-	}
-`
-export const MediaLink = styled.a`
-	padding: 1rem 0rem;
-	padding-bottom: .5rem;
-	line-height: 1;
-	font-size: 1rem;
-	text-transform: capitalize;
-	font-family: ${variables.fontFamily};
-	font-weight: bold;
-	color: ${variables.primary};
-	
 `
