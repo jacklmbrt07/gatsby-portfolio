@@ -1,7 +1,7 @@
 Portfolio To-Do:
 
-- change font
-- add space between coffee
+- ~~change font~~
+- ~~add space between coffee~~
 - move icons next navbar links
 - remove twitter link after Avatar
 - change about me
