@@ -39,10 +39,10 @@ const About = () => {
                       rel="noopener noreferrer"
                       aria-label={`follow us on ${name}`}
                     >
+                      {name === "github" ? <GitHub /> : ""}
+                      {name === "linkedin" ? <Linkedin /> : ""}
                       {name === "twitter" ? <Twitter /> : ""}
                       {name === "instagram" ? <Instagram /> : ""}
-                      {name === "linkedin" ? <Linkedin /> : ""}
-                      {name === "github" ? <GitHub /> : ""}
                     </SocialLink>
                   ))}
                 </div>
