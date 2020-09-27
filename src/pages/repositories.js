@@ -43,7 +43,6 @@ export const gitHubQuery = graphql`
             nodes {
               name
               description
-              homepageUrl
               resourcePath
               forkCount
               createdAt
@@ -56,9 +55,7 @@ export const gitHubQuery = graphql`
                   }
                 }
               }
-              licenseInfo {
-                name
-              }
+
               stargazers {
                 totalCount
               }
