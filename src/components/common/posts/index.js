@@ -3,7 +3,7 @@ import variables from '../../../data/variables';
 
 export const Intro = styled.div`
   padding: 8rem 0 4rem 0;
-  font-family: "GT-Walsheim-Pro-Regular";
+  font-family: ${variables.fontFamily};
 `;
 export const HeaderIntro = styled.header`
   display: grid;
@@ -13,7 +13,8 @@ export const HeaderIntro = styled.header`
   margin-bottom: 6rem;
 `
 export const Title = styled.h1`
-  font-family: "GT-Walsheim-Pro-Bold";
+  font-family: ${variables.fontFamily};
+  font-weight: bolder;
   font-size: 2rem;
   text-transform: capitalize;
   @media(max-width: ${variables.breakpointPhone}) {
@@ -23,7 +24,8 @@ export const Title = styled.h1`
 export const SubTitle = styled.h3`
   font-size: 2rem;
   text-transform: capitalize;
-  font-family: "GT-Walsheim-Pro-Bold";
+  font-family: ${variables.fontFamily};
+  font-weight: bolder;
   text-decoration: underline;
 `
 export const Text = styled.p`
@@ -95,7 +97,8 @@ export const WorkPost = styled.article`
   }
 `
 export const Category = styled.span`
-  font-family: "GT-Walsheim-Pro-Bold";
+  font-family: ${variables.fontFamily};
+  font-weight: bolder;
   color: ${variables.primary};
   text-transform: uppercase;
   letter-spacing: .05em;

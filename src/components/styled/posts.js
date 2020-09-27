@@ -1,14 +1,16 @@
-import styled from "styled-components";
+import styled from "styled-components"
+import variables from "../../data/variables"
 
 export const Intro = styled.div`
   padding: 8rem 0 4rem 0;
   text-align: left;
-`;
+`
 
 export const Title = styled.h1`
   font-size: 2rem;
   text-transform: capitalize;
-  font-family: "GT-Walsheim-Pro-Bold";
+  font-family: ${variables.fontFamily};
+  font-weight: bold;
 `
 
 export const ArticlePost = styled.article`
@@ -18,22 +20,22 @@ export const ArticlePost = styled.article`
   margin: auto;
   text-align: center;
   img[src$="imgresponsive"] {
-    max-width:80%;
+    max-width: 80%;
   }
 `
 export const SmallText = styled.small`
-    font-size: .89rem;
-    padding-right: 10px;
-    font-family: "GT-Walsheim-Pro-Regular";
-    > span {
-      padding-left: 5px;
-    }
+  font-size: 0.89rem;
+  padding-right: 10px;
+  font-family: ${variables.fontFamily};
+  > span {
+    padding-left: 5px;
+  }
 `
-export const ArticleBody = styled.div `
+export const ArticleBody = styled.div`
   margin-top: 5rem;
   p {
     font-size: 1.5rem;
-    font-family: "GT-Walsheim-Pro-Medium";
+    font-family: ${variables.fontFamily};
   }
 `
 
@@ -54,6 +56,6 @@ export const NaviagtionLi = styled.li`
   }
   a {
     font-size: 1.3rem;
-    font-family: "GT-Walsheim-Pro-Medium";
+    font-family: ${variables.fontFamily};
   }
 `

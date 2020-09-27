@@ -6,7 +6,7 @@ Portfolio To-Do:
 - remove twitter link after Avatar
 - change about me
 - change button format for 'download resume' too big
-- add resume
+- add resume, VisualCV
 - remove 'contact me section'
 - make 'about me' text smaller
 - ' good design doesnt date' remove

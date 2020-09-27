@@ -13,5 +13,8 @@ export default {
   breakpointPhone: "850px",
   breakpointTablet: "1024px",
   breakpointLaptop: "1200px",
-  breakpointLarge: "60em" // 960px
+  breakpointLarge: "60em", // 960px
+
+  // font
+  fontFamily: "athelas, georgia, serif",
 }

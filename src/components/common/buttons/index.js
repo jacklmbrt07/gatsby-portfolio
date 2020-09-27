@@ -1,17 +1,17 @@
 import styled from "styled-components";
-import colors from "../../../data/variables";
+import variables from "../../../data/variables";
 
 export const ButtonDefault = styled.a`
   cursor: pointer;
   margin: 10% 0%;
-  font-family: "GT-Walsheim-Pro-Medium";
+  font-family: ${variables.fontFamily};
   font-size: inherit;
   text-align: center;
   letter-spacing: 3px;
   text-transform: uppercase;
   text-decoration:none;
-  border: 4px solid ${colors.primary};
-  color: ${colors.primary};
+  border: 4px solid ${variables.primary};
+  color: ${variables.primary};
   background: #fff;
   outline: none;
   position: relative;
@@ -25,8 +25,8 @@ export const ButtonDefault = styled.a`
     position: absolute;
     width: 100%;
     height: 100%;
-    border: 4px solid ${colors.primary};
-    background-color: ${colors.primary};
+    border: 4px solid ${variables.primary};
+    background-color: ${variables.primary};
     left: 4px;
     top: 9px;
     z-index: -1;
@@ -44,14 +44,14 @@ export const ReadMore = styled.span`
   font-size: 1rem;
   text-transform: inherit;
   letter-spacing: .7px;
-  font-family: "GT-Walsheim-Pro-Medium";
+  font-family: ${variables.fontFamily};
   &:hover {
-    color: ${colors.primary};
+    color: ${variables.primary};
   }
   &:after {
     bottom: 1px;
     height: 3px;
-    background: ${colors.primary};
+    background: ${variables.primary};
   }
 `
 
@@ -59,7 +59,7 @@ export const ResumeButton = styled.a`
   color: #000;
   font-size: 1rem;
   letter-spacing: 2px;
-  font-family: "GT-Walsheim-Pro-Medium";
+  font-family: ${variables.fontFamily};
   border: 5px solid #e8e7e7;
   display: block;
   margin: 6rem 0 2rem 0;
@@ -69,7 +69,7 @@ export const ResumeButton = styled.a`
   border-radius: .5rem;
   transition: color 300ms ease-in-out, border-color 400ms ease-in-out;
   &:hover {
-    color: ${colors.primary};
-    border-color: ${colors.primary}
+    color: ${variables.primary};
+    border-color: ${variables.primary}
   }
 `
