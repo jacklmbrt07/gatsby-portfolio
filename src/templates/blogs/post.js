@@ -5,7 +5,7 @@ import SEO from "../../components/seo"
 import { Calendar, Clock } from 'react-feather'
 
 import {Intro, Title, ArticlePost, SmallText, ArticleBody, NaviagtionList, NaviagtionLi } from '../../components/styled/posts'
-import {ContainerLayout} from '../../components/common'
+import {ContainerLayout} from '../../components/common/index'
 
 
 const BlogPost = ({data, pageContext, location}) => {

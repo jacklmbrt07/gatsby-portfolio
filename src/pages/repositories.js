@@ -4,7 +4,7 @@ import SEO from "../components/seo"
 import Repository from "../components/works/github"
 import { graphql } from "gatsby"
 import {RepoGrid, RepoInfo, Avatar} from "../components/styled/repository"
-import {SectionIntro, ContainerLayout} from "../components/common";
+import {SectionIntro, ContainerLayout} from "../components/common/index";
 
 const RepositoryPage = ({data}) => { 
   const {

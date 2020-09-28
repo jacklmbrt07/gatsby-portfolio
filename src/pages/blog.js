@@ -4,7 +4,7 @@ import SEO from "../components/seo"
 import { Link, graphql } from "gatsby"
 import { Calendar, Clock } from 'react-feather'
 import Img from "gatsby-image"
-import {ContainerLayout, WorkPost, Intro, SubTitle, Title, Text, HeaderIntro, SubText, SmallText, UnderLink, ReadMore} from "../components/common"
+import {ContainerLayout, WorkPost, Intro, SubTitle, Title, Text, HeaderIntro, SubText, SmallText, UnderLink, ReadMore} from "../components/common/index"
 import CategoriesTags from '../components/CategoriesTags/categoriesTags';
 import kebabCase from "lodash/kebabCase"
 

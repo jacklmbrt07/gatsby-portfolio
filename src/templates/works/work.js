@@ -2,13 +2,18 @@ import React from "react"
 import { graphql } from "gatsby"
 import Layout from "../../components/layout"
 import SEO from "../../components/seo"
-import { Calendar } from 'react-feather'
+import { Calendar } from "react-feather"
 
-import {Intro, Title, ArticlePost, SmallText, ArticleBody} from '../../components/styled/posts'
-import {ContainerLayout} from '../../components/common'
+import {
+  Intro,
+  Title,
+  ArticlePost,
+  SmallText,
+  ArticleBody,
+} from "../../components/styled/posts"
+import { ContainerLayout } from "../../components/common/index"
 
-
-const portfolioWork = ({data, pageContext, location}) => {
+const portfolioWork = ({ data, pageContext, location }) => {
   const work = data.markdownRemark
   const siteTitle = data.site.siteMetadata.title
 
@@ -18,20 +23,25 @@ const portfolioWork = ({data, pageContext, location}) => {
         title={work.frontmatter.title}
         description={work.frontmatter.description || work.excerpt}
       />
-      <Intro >
+      <Intro>
         <ContainerLayout>
           <div>
             <ArticlePost>
               <header>
-                <Title>
-                  {work.frontmatter.title}
-                </Title>
-                <SmallText> 
-                  <Calendar className="align-middle text-primary" width="18" height="18" /> 
-                  <span className="align-middle"> date published : {work.frontmatter.date} </span>
+                <Title>{work.frontmatter.title}</Title>
+                <SmallText>
+                  <Calendar
+                    className="align-middle text-primary"
+                    width="18"
+                    height="18"
+                  />
+                  <span className="align-middle">
+                    {" "}
+                    date published : {work.frontmatter.date}{" "}
+                  </span>
                 </SmallText>
               </header>
-              
+
               <ArticleBody dangerouslySetInnerHTML={{ __html: work.html }} />
             </ArticlePost>
           </div>
@@ -41,7 +51,7 @@ const portfolioWork = ({data, pageContext, location}) => {
   )
 }
 
-export default portfolioWork;
+export default portfolioWork
 
 export const data = graphql`
   query portfolioWorkBySlug($slug: String!) {
@@ -58,9 +68,8 @@ export const data = graphql`
       frontmatter {
         title
         date(formatString: "MMMM DD, YYYY")
-        description,
-        time,
-
+        description
+        time
       }
     }
   }
