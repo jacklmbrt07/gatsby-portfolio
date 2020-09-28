@@ -14,3 +14,4 @@ Portfolio To-Do:
 - add descriptions to github depositories
 - add portfolio items
 - add blog items
+- portrait is pixelated

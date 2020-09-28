@@ -1,5 +1,5 @@
-import styled from "styled-components";
-import variables from "../../../data/variables";
+import styled from "styled-components"
+import variables from "../../../data/variables"
 
 export const ButtonDefault = styled.a`
   cursor: pointer;
@@ -9,7 +9,7 @@ export const ButtonDefault = styled.a`
   text-align: center;
   letter-spacing: 3px;
   text-transform: uppercase;
-  text-decoration:none;
+  text-decoration: none;
   border: 4px solid ${variables.primary};
   color: ${variables.primary};
   background: #fff;
@@ -19,9 +19,9 @@ export const ButtonDefault = styled.a`
   padding: 15px 10px 14px;
   cursor: pointer;
   width: auto;
-  min-width:200px;
+  min-width: 200px;
   &::after {
-    min-width:200px;
+    min-width: 200px;
     position: absolute;
     width: 100%;
     height: 100%;
@@ -30,20 +30,20 @@ export const ButtonDefault = styled.a`
     left: 4px;
     top: 9px;
     z-index: -1;
-    content: '';
+    content: "";
     transition: all 0.5s;
   }
   &:hover:after {
     top: 0px;
     left: -4px;
   }
-`;
+`
 
 export const ReadMore = styled.span`
   color: #000;
   font-size: 1rem;
   text-transform: inherit;
-  letter-spacing: .7px;
+  letter-spacing: 0.7px;
   font-family: ${variables.fontFamily};
   &:hover {
     color: ${variables.primary};
@@ -60,16 +60,15 @@ export const ResumeButton = styled.a`
   font-size: 1rem;
   letter-spacing: 2px;
   font-family: ${variables.fontFamily};
-  border: 5px solid #e8e7e7;
-  display: block;
+  border: 3px solid #e8e7e7;
+  display: inline-block;
   margin: 6rem 0 2rem 0;
-  padding: 2rem;
+  padding: 1rem 1rem;
   text-align: center;
-  text-transform: uppercase;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   transition: color 300ms ease-in-out, border-color 400ms ease-in-out;
   &:hover {
     color: ${variables.primary};
-    border-color: ${variables.primary}
+    border-color: ${variables.primary};
   }
 `
