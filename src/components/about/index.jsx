@@ -56,7 +56,7 @@ const About = () => {
               </div>
             </div>
             <div>
-              <Title> Hello, I’m Jack Lambert </Title>
+              <Title> Hello, I’m Jack Lambert. </Title>
               <Text>
                 {" "}
                 I am a Full-Stack Web Developer/Engineer hailing from the{" "}

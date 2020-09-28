@@ -1,5 +1,4 @@
 import React from "react"
-import socialMedia from "../../../data/socialMedia.json"
 import data from "./../../../data/data"
 import { FooterStyle, FooterBody, SubRight, CopyRight } from "./style"
 import { ContainerLayout, ButtonDefault } from "../../common"
@@ -11,20 +10,23 @@ const Footer = () => {
         <ContainerLayout>
           <FooterBody>
             <div>
+              <p className="text-primary quote"> I'm looking for work! </p>
               <p className="text-primary quote">
-                {" "}
-                Ready to take the next step and work together?{" "}
+                <ul>
+                  <li>Phone: (925) 980-7780</li>
+                  <li>E-mail: jacklmbrt07@gmail.com</li>
+                </ul>
               </p>
               <ButtonDefault href={`mailto:${data.SiteContact.email}`}>
                 {" "}
-                Contact me{" "}
+                E-mail me{" "}
               </ButtonDefault>
             </div>
           </FooterBody>
           <div className="box">
             <SubRight>
-              Compare yourself to who you were yesterday, not to who someone
-              else is today.
+              "Compare yourself to who you were yesterday, not to who someone
+              else is today."
             </SubRight>
             <CopyRight className="text-dark">
               ©
