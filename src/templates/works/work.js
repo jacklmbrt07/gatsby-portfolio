@@ -11,6 +11,7 @@ import {
   SmallText,
   ArticleBody,
 } from "../../components/styled/posts"
+
 import { ContainerLayout } from "../../components/common/index"
 
 const portfolioWork = ({ data, pageContext, location }) => {

@@ -30,7 +30,7 @@ export const NavbarList = styled.ul`
   grid-template-columns: repeat(4, 1fr);
   list-style: none;
   > li a {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     color: #232323;
     padding: 0.5rem 0.2rem;
     margin: 0 1rem;

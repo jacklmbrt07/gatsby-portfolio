@@ -93,14 +93,13 @@ const About = () => {
                 like to pretend I’m Anthony Bourdain, but in reality I’m taking
                 selfies with a 12 foot long selfie stick in front of the Eiffel
                 Tower, followed by an authenitc meal at the Golden Arches for
-                lunch, just like every one else! I’m only joking, and I have
-                indeed spent many months overseas in Australia, Southeast Asia,
-                and other destinations (Australian is my second language). While
-                abroad, I picked up photography as a hobby (and drastically
-                reduced my selfie stick length). I treat my photographs, vinyl
-                records, and books like my step-children. I enjoy all things
-                involving art, history, food, and could spend hours in
-                philosophical discussions.
+                lunch! I’m only joking, and I have indeed spent many months
+                overseas in Australia, Southeast Asia, and other destinations
+                (Australian is my second language). While abroad, I picked up
+                photography as a hobby (and drastically reduced my selfie stick
+                length). I treat my photographs, vinyl records, and books like
+                my step-children. I enjoy all things involving art, history,
+                food, and could spend hours in philosophical discussions.
               </Text>
               <Text>
                 {" "}

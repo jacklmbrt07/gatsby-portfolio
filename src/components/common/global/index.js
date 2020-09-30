@@ -1,5 +1,5 @@
-import { createGlobalStyle } from 'styled-components';
-import variables from "../../../data/variables";
+import { createGlobalStyle } from "styled-components"
+import variables from "../../../data/variables"
 
 export const GlobalStyle = createGlobalStyle`
   // normalize
@@ -119,7 +119,18 @@ export const GlobalStyle = createGlobalStyle`
     }
   }
 
-  
+.github-link {
+  display: inline-block;
+  color: black;
+  vertical-align: bottom;
+  text-decoration: underline;
+  box-shadow: none;
+  font-weight: bold;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
 .lined-link {
   display: inline-block;
   position: relative;

@@ -1,7 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
-import { User, Briefcase, Feather, Coffee, GitHub } from "react-feather"
+import { User, Briefcase, Aperture, Coffee, GitHub } from "react-feather"
 
 import { NavbarElement, NavbarList, NavbarLogo } from "./style"
 
@@ -44,7 +44,7 @@ const Navbar = ({ siteTitle }) => (
             <li>
               <Link to="/blog" className="lined-link" activeClassName="active">
                 {" "}
-                <Feather /> <span> Blog </span>{" "}
+                <Aperture /><span style={{ fontSize: '1.04rem'}}>Photography</span>{" "}
               </Link>
             </li>
           </NavbarList>
