@@ -48,7 +48,6 @@ const About = () => {
                     >
                       {name === "github" ? <GitHub /> : ""}
                       {name === "linkedin" ? <Linkedin /> : ""}
-                      {name === "twitter" ? <Twitter /> : ""}
                       {name === "instagram" ? <Instagram /> : ""}
                     </SocialLink>
                   ))}

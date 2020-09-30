@@ -26,7 +26,7 @@ export const Title = styled.h1`
   }
 `
 export const Text = styled.p`
-  font-size: 1.2rem;
+  font-size: 1rem;
   line-height: 2;
   color: #232323;
   a {
