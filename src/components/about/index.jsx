@@ -84,7 +84,7 @@ const About = () => {
                 flow freely, and use my focused attention to detail. Maybe I
                 binged watched too much of HBO’s <em>Silicon Valley</em>, but I
                 picture myself one day leading a team creating something that is
-                both ethical and economic.
+                both purposeful and economic.
               </Text>
               <Text>
                 {" "}
