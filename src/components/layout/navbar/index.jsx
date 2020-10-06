@@ -22,7 +22,8 @@ const Navbar = ({ siteTitle }) => (
             <li>
               <Link to="/" className="lined-link" activeClassName="active">
                 {" "}
-                <User/><span> About</span>{" "}
+                <User />
+                <span> About</span>{" "}
               </Link>
             </li>
             <li>
@@ -42,9 +43,14 @@ const Navbar = ({ siteTitle }) => (
               </Link>
             </li>
             <li>
-              <Link to="/blog" className="lined-link" activeClassName="active">
+              <Link
+                to="/gallery"
+                className="lined-link"
+                activeClassName="active"
+              >
                 {" "}
-                <Aperture /><span style={{ fontSize: '1.04rem'}}>Photography</span>{" "}
+                <Aperture />
+                <span style={{ fontSize: "1.04rem" }}>Photography</span>{" "}
               </Link>
             </li>
           </NavbarList>

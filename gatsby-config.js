@@ -1,7 +1,7 @@
-const data = require('./src/data/data');
-require('dotenv').config({
+const data = require("./src/data/data")
+require("dotenv").config({
   path: `.env.${process.env.NODE_ENV}`,
-});
+})
 module.exports = {
   siteMetadata: {
     title: data.SiteTitle,
@@ -9,6 +9,7 @@ module.exports = {
     author: data.SiteAuthor,
   },
   plugins: [
+    `gatsby-theme-gallery`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-styled-components`,
     `gatsby-transformer-sharp`,
@@ -65,7 +66,7 @@ module.exports = {
         background_color: `#000`,
         theme_color: `#000`,
         display: `minimal-ui`,
-        icon: `src/assets/img/portfolio-icon.png`, // This path is relative to the root of the site.
+        icon: `src/assets/img/favicon.ico`, // This path is relative to the root of the site.
       },
     },
     {
@@ -80,8 +81,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-          trackingId: process.env.GATSBY_GOOGLE_ANALYTICS,
-          head: true,
+        trackingId: process.env.GATSBY_GOOGLE_ANALYTICS,
+        head: true,
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
