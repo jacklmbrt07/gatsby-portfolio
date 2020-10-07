@@ -1,13 +1,16 @@
 import React from "react"
-// import { Gallery } from "gatsby-theme-gallery"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+// import { StaticQuery, graphql } from "gatsby"
+// import Img from "gatsby-image"
 
-const MyGallery = () => (
-  <Layout>
-    <SEO title="Gallery" />
-    {/* <Gallery /> */}
-  </Layout>
-)
+const GalleryPage = ({ data }) => {
+  return (
+    <Layout>
+      <SEO title="Gallery" />
+      Hello World
+    </Layout>
+  )
+}
 
-export default MyGallery
+export default GalleryPage
