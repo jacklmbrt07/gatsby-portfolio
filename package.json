@@ -20,7 +20,6 @@
     "gatsby-remark-smartypants": "^2.3.9",
     "gatsby-source-filesystem": "^2.3.11",
     "gatsby-source-github-api": "^0.2.1",
-    "gatsby-theme-gallery": "^1.0.2",
     "gatsby-transformer-remark": "^2.8.27",
     "gatsby-transformer-sharp": "^2.5.5",
     "node-sass": "^4.14.1",
