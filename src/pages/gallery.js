@@ -3,7 +3,20 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { StaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
-import { Maximize } from "react-feather"
+import Zoom from "react-medium-image-zoom"
+import "react-medium-image-zoom/dist/styles.css"
+
+const photoStyle = {
+  display: "Grid",
+  gridTemplateColumns: "1fr 1fr 1fr",
+  gridGap: 25,
+  flexWrap: "wrap",
+  padding: "0 4px",
+  flex: "50%",
+  margin: "40px 30px",
+  justifyContent: "space-around",
+  alignContent: "space-evenly",
+}
 
 const GalleryPage = () => {
   return (
@@ -15,7 +28,7 @@ const GalleryPage = () => {
             allFile(
               filter: {
                 extension: { regex: "/(jpg)|(jpeg)|(png)/" }
-                relativeDirectory: { eq: "australia" }
+                relativeDirectory: { eq: "images" }
               }
             ) {
               edges {
@@ -46,18 +59,19 @@ const GalleryPage = () => {
           }
         `}
         render={data => (
-          <div class="photography">
+          <div className="photoContainer" style={photoStyle}>
             {data.allFile.edges.map(edge => (
-              <Img
-                fluid={edge.node.childImageSharp.fluid}
-                alt={edge.node.name}
-                style={{ maxWidth: 300 }}
-              />
+              <Zoom zoomMargin={20} wrapStyle={{ display: "inherit" }}>
+                <Img
+                  fluid={edge.node.childImageSharp.fluid}
+                  alt={edge.node.name}
+                  style={{ border: "1px solid black" }}
+                />
+              </Zoom>
             ))}
           </div>
         )}
       />
-      Hello World
     </Layout>
   )
 }
