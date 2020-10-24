@@ -7,13 +7,9 @@ import Zoom from "react-medium-image-zoom"
 import "react-medium-image-zoom/dist/styles.css"
 
 const photoStyle = {
-
-
   display: "grid",
   gridTemplateColumns: "1fr 1fr 1fr ",
-  gridGap: '2em',
-  
-
+  gridGap: "2em",
   flexWrap: "wrap",
   padding: "0 4px",
   flex: "50%",
@@ -21,9 +17,6 @@ const photoStyle = {
   justifyContent: "space-around",
   alignContent: "space-evenly",
 }
-
-
-
 
 const GalleryPage = () => {
   return (
@@ -68,16 +61,19 @@ const GalleryPage = () => {
         render={data => (
           <div className="photoContainer" id="photos" style={photoStyle}>
             {data.allFile.edges.map(edge => (
-              <div style={{ alignSelf: 'center'}}>
+              <div style={{ alignSelf: "center" }}>
                 <Zoom zoomMargin={20} wrapStyle={{ display: "inherit" }}>
-                <Img
-                  fluid={edge.node.childImageSharp.fluid}
-                  alt={edge.node.name}
-                  style={{ border: "1px solid black", maxHeight: '100%', alignSelf: 'center'}}
-                />
-
-              </Zoom>
-                </div>
+                  <Img
+                    fluid={edge.node.childImageSharp.fluid}
+                    alt={edge.node.name}
+                    style={{
+                      border: "1px solid black",
+                      maxHeight: "100%",
+                      alignSelf: "center",
+                    }}
+                  />
+                </Zoom>
+              </div>
             ))}
           </div>
         )}
