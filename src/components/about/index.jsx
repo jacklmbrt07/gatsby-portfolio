@@ -15,7 +15,7 @@ import socialMedia from "../../data/socialMedia.json"
 const About = () => {
   const data = useStaticQuery(graphql`
     query {
-      profilePicture: file(relativePath: { eq: "profile-picture.jpg" }) {
+      profilePicture: file(relativePath: { eq: "profile-picture_R1.jpg" }) {
         childImageSharp {
           fluid(maxWidth: 2048) {
             ...GatsbyImageSharpFluid
