@@ -49,4 +49,9 @@ export const FooterBody = styled.div`
   @media (max-width: ${variables.breakpointPhone}) {
     grid-template-columns: 1fr;
   }
+  li {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
 `

@@ -35,7 +35,7 @@ const About = () => {
                 fluid={data.profilePicture.childImageSharp.fluid}
                 alt="user photo"
               />
-              <SubTitle> Software Engineer</SubTitle>
+              <SubTitle>Software Engineer</SubTitle>
               <div className="center">
                 <div>
                   {socialMedia.map(({ id, name, url }) => (
@@ -49,6 +49,7 @@ const About = () => {
                       {name === "github" ? <GitHub /> : ""}
                       {name === "linkedin" ? <Linkedin /> : ""}
                       {name === "instagram" ? <Instagram /> : ""}
+                      {name === "twitter" ? <Twitter /> : ""}
                     </SocialLink>
                   ))}
                 </div>
