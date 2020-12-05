@@ -11,12 +11,8 @@ const Footer = () => {
           <FooterBody>
             <div>
               <p className="text-primary quote"> I'm looking for work! </p>
-              <p className="text-primary quote">
-                <ul>
-                  <li>Phone: (925) 980-7780</li>
-                  <li>E-mail: jacklmbrt07@gmail.com</li>
-                </ul>
-              </p>
+              <p className="text-primary quote">Phone: (925) 980-7780</p>
+              <p className="text-primary quote">E-mail: jacklmbrt07@gmail.com</p>
               <ButtonDefault href={`mailto:${data.SiteContact.email}`}>
                 {" "}
                 E-mail me{" "}
