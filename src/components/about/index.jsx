@@ -59,10 +59,10 @@ const About = () => {
               <Title> Hello, I’m Jack Lambert. </Title>
               <Text>
                 {" "}
-                I am a Full-Stack Web Developer/Engineer hailing from the{" "}
+                I am a Full-Stack Web Developer/Engineer hailing from{" "}
                 <b className="text-primary lined-link">
                   {" "}
-                  Bay Area, California.
+                  San Francisco, California.
                 </b>
               </Text>
               <Text>
