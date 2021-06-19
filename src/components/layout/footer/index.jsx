@@ -10,7 +10,7 @@ const Footer = () => {
         <ContainerLayout>
           <FooterBody>
             <div>
-              <p className="text-primary quote"> I'm looking for work! </p>
+              <p className="text-primary quote">Front-End Developer at <a href="https://nuvolum.com/" target="_blank" title="Learn more about Nuvolum Inc.">Nuvolum</a></p>
               <p className="text-primary quote">Phone: (925) 980-7780</p>
               <p className="text-primary quote">E-mail: jacklmbrt07@gmail.com</p>
               <ButtonDefault href={`mailto:${data.SiteContact.email}`}>
