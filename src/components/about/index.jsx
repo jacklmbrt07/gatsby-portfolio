@@ -101,7 +101,7 @@ const About = () => {
                 San Jose State University, and completed the Software
                 Engineering Immersive Program from General Assembly in 2020.{" "}
               </Text>
-              <ResumeButton href="resume.pdf" target="_blank">
+              <ResumeButton href="static/resume.pdf" target="_blank">
                 {" "}
                 See Resume PDF{" "}
               </ResumeButton>
