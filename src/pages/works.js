@@ -50,6 +50,7 @@ const WorkIndex = ({ data }) => {
                             style={{ boxShadow: `none` }}
                             to={node.frontmatter.url}
                             target="_blank"
+                            rel="noreferrer"
                           >
                             {title}
                           </Link>
@@ -78,6 +79,7 @@ const WorkIndex = ({ data }) => {
                         }}
                         to={node.frontmatter.githubRepo}
                         target="_blank"
+                        rel="noreferrer"
                       >
                         <GitHub />
                         GitHub
