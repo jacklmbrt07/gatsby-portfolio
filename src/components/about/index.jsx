@@ -11,7 +11,7 @@ import {
 } from "./style"
 import { SectionIntro, ContainerLayout, ResumeButton } from "../common"
 import socialMedia from "../../data/socialMedia.json"
-import resume from "../../../static/Jack_Lambert_Resume.pdf"
+import resume from "../../../static/Jack_Lambert_resume_2024.pdf"
 
 const About = () => {
   const data = useStaticQuery(graphql`
